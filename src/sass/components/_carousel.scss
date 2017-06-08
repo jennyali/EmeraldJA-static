@@ -1,0 +1,29 @@
+#home_carousel {
+
+    .item {
+        position: relative;
+        //height: 100vh;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    li {
+        background: $dark;
+        border-color: $dark;
+        margin: 0 $spacing-lg;
+    }
+
+    li.active {
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+
+    .item__text-container__inner-box {
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+}

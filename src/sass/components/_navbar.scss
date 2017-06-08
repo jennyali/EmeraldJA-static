@@ -1,0 +1,39 @@
+
+//#     SITE HEADER NAVIGATION STYLE
+.site-header {
+
+    .navbar {
+        padding: ($spacing-base * 2) 0;
+        margin: 0;
+    }
+
+    .navbar-brand {
+        font-size: $font-size-xxlg;
+        letter-spacing: 5px;
+    }
+
+    .navbar-brand--thick-text {
+        font-weight: bold;
+        font-style: italic;
+        font-size: $font-size-xxxlg;
+        color: $primary-color;
+    }
+
+    .navbar-nav {
+        margin-top: $spacing-sm;
+        padding: $spacing-base 0;
+
+        a {
+            padding: 0 $spacing-base;
+            letter-spacing: 2px;
+            font-size: $font-size-sm;
+            font-family: Poppins, sans-serif;
+        }
+    }
+
+    .navbar-brand, 
+    .navbar-nav a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}

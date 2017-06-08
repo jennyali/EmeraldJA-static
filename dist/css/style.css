@@ -5814,4 +5814,77 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*===========================
+
+        GLOBAL VARIABLES
+
+=============================*/
+/* color
+-----------------------*/
+/* font-families
+-----------------------*/
+/* font-size
+-----------------------*/
+/* margin/padding sizing
+-----------------------*/
+/* breakpoints
+-----------------------*/
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+/*===========================
+
+            MIXINS
+
+=============================*/
+.site-header .navbar {
+  padding: 1.875em 0;
+  margin: 0; }
+
+.site-header .navbar-brand {
+  font-size: 32px;
+  letter-spacing: 5px; }
+
+.site-header .navbar-brand--thick-text {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 45px;
+  color: #06D6A0; }
+
+.site-header .navbar-nav {
+  margin-top: 0.6em;
+  padding: 0.9375em 0; }
+  .site-header .navbar-nav a {
+    padding: 0 0.9375em;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif; }
+
+.site-header .navbar-brand,
+.site-header .navbar-nav a {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+#home_carousel .item {
+  position: relative; }
+
+#home_carousel img {
+  width: 100%; }
+
+#home_carousel li {
+  background: #222;
+  border-color: #222;
+  margin: 0 1.25em; }
+
+#home_carousel li.active {
+  background: #06D6A0;
+  border-color: #06D6A0; }
+
+#home_carousel .item__text-container__inner-box {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%); }
+
 /*# sourceMappingURL=style.css.map*/

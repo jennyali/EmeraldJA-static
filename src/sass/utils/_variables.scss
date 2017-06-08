@@ -1,0 +1,96 @@
+/*===========================
+
+        GLOBAL VARIABLES
+
+=============================*/
+
+/* color
+-----------------------*/
+
+$colors : (
+    primary: #06D6A0,
+    secondary: rgba(255,31,121,1),
+    light: #FFFFFF,
+    dark: #222,
+    mid-grey: lighten(#222, 60%),
+    light-grey: lighten(#222, 75%),
+);
+
+$primary-color: map-get($map: $colors, $key: primary);
+$secondary-color: map-get($map: $colors, $key: secondary);
+$dark: map-get($map: $colors, $key: dark);
+$light: map-get($map: $colors, $key: light);
+$mid-grey: map-get($map: $colors, $key: mid-grey);
+$light-grey: map-get($map: $colors, $key: light-grey);
+
+/* font-families
+-----------------------*/
+
+$font-family-heading: 'Fugaz One', cursive;
+$font-family-sub-heading: 'Raleway', sans-serif;
+$font-family-paragraph: 'Open Sans', sans-serif;
+
+$hero-font-handwriting: 'Dancing Script', cursive;
+$hero-font-bold: 'Playfair Display', serif;
+$hero-font-bold-italic: 'Playfair Display', serif;
+
+/* font-size
+-----------------------*/
+// BS default = 14px
+
+
+$font-size: (
+    huge: 60px,
+    xxxlg: 45px,
+    xxlg: 32px,
+    xlg: 24px,
+    lg: 20px,
+    md: 18px,
+    base: 16px,
+    sm: 14px,
+    xs: 10px,
+);
+
+$font-size-huge:  map-get($map: $font-size, $key: huge);
+$font-size-xxxlg:  map-get($map: $font-size, $key: xxxlg);
+$font-size-xxlg:  map-get($map: $font-size, $key: xxlg);
+$font-size-xlg:  map-get($map: $font-size, $key: xlg);
+$font-size-lg:  map-get($map: $font-size, $key: lg);
+$font-size-md:  map-get($map: $font-size, $key: md);
+$font-size-base:  map-get($map: $font-size, $key: base);
+$font-size-sm:  map-get($map: $font-size, $key: sm);
+$font-size-xs:  map-get($map: $font-size, $key: xs);
+
+
+/* margin/padding sizing
+-----------------------*/
+// BS default = 15px
+
+$spacing-xs: 5px;
+$spacing-sm: 0.6em;       // 10px
+$spacing-base: 0.9375em; // 15px
+$spacing-lg: 1.25em;    // 20px
+//$spacing-double: 30px;
+//$spacing-triple: 60px;
+
+/* breakpoints
+-----------------------*/
+// bp = breakpoint
+
+$breakpoints: (
+    xs: 420px,
+    sm: 767px,
+    md: 992px,
+    lg: 1200px,
+);
+
+$bp-xs: map-get($map: $breakpoints, $key: xs);
+$bp-sm: map-get($map: $breakpoints, $key: sm);
+$bp-md: map-get($map: $breakpoints, $key: md);
+$bp-lg: map-get($map: $breakpoints, $key: lg);
+
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
