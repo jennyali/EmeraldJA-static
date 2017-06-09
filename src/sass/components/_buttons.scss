@@ -1,0 +1,27 @@
+// Custom 1 = bg : black & text : white, hover = light green bg & white text.
+
+.btn-custom-1 {
+    padding: $spacing-base ($spacing-base * 2);
+    background: $dark;
+    border-color: $dark;
+    font-weight: bold;
+    color: $light;
+    letter-spacing: 1.5px;
+    font-size: $font-size-base;
+    border-radius: 0;
+    transition: all 0.5s;
+
+    &:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $light;
+    }
+}
+
+.btn-clear {
+    background: none;
+    border: none;
+    font-size: $font-size-md;
+    text-transform: uppercase;
+    font-weight: 600;
+}
