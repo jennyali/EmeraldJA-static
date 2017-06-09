@@ -9,6 +9,7 @@
 
 $colors : (
     primary: #06D6A0,
+    primary-dark:#2E3028,
     secondary: rgba(255,31,121,1),
     light: #FFFFFF,
     dark: #222,
@@ -17,6 +18,7 @@ $colors : (
 );
 
 $primary-color: map-get($map: $colors, $key: primary);
+$primary-dark-color: map-get($map: $colors, $key: primary-dark);
 $secondary-color: map-get($map: $colors, $key: secondary);
 $dark: map-get($map: $colors, $key: dark);
 $light: map-get($map: $colors, $key: light);
@@ -28,7 +30,7 @@ $light-grey: map-get($map: $colors, $key: light-grey);
 
 $font-family-heading: 'Fugaz One', cursive;
 $font-family-sub-heading: 'Raleway', sans-serif;
-$font-family-paragraph: 'Open Sans', sans-serif;
+$font-family-paragraph: Poppins, sans-serif;
 
 $hero-font-handwriting: 'Dancing Script', cursive;
 $hero-font-bold: 'Playfair Display', serif;
@@ -40,7 +42,7 @@ $hero-font-bold-italic: 'Playfair Display', serif;
 
 
 $font-size: (
-    huge: 60px,
+    huge: 72px,
     xxxlg: 45px,
     xxlg: 32px,
     xlg: 24px,
@@ -67,9 +69,9 @@ $font-size-xs:  map-get($map: $font-size, $key: xs);
 // BS default = 15px
 
 $spacing-xs: 5px;
-$spacing-sm: 0.6em;       // 10px
-$spacing-base: 0.9375em; // 15px
-$spacing-lg: 1.25em;    // 20px
+$spacing-sm: 10px;       // 10px 0.6em
+$spacing-base: 15px; // 15px 0.9375em
+$spacing-lg: 20px;    // 20px 1.25em
 //$spacing-double: 30px;
 //$spacing-triple: 60px;
 
