@@ -37,3 +37,34 @@
         text-decoration: none;
     }
 }
+
+//#     SITE FOOTER NAVBAR
+.navbar-custom-2 {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    height: 100px;
+
+    .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);  
+    }
+
+    .nav {
+
+        a {
+            padding: 0;
+        }
+
+        li {
+            padding: $spacing-base $spacing-base;
+        }
+
+        a, 
+        li,
+        & > li > a {
+            color: $light;
+        }
+    }
+}
