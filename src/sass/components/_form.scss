@@ -1,0 +1,47 @@
+.form-custom-1 {
+    background: $dark-grey;
+    color: $light;
+
+    h2 {
+        color: $light;
+    }
+
+    .form-control {
+        background: $dark-grey;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $primary-color;
+        transition: border-bottom 0.2s;
+
+        -webkit-box-shadow: inset 0px 1px 5px -1px rgba(0,0,0,0.3);
+        -moz-box-shadow: inset 0px 1px 5px -1px rgba(0,0,0,0.3);
+        box-shadow: inset 0px 1px 5px -1px rgba(0,0,0,0.3);
+
+        &:focus {
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+
+    input {
+        color: $light;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+
+    label {
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 2;
+    }
+    
+    .contact-form__container__small-columns {
+        display: flex;
+        justify-content: space-between;
+        
+        .form-group {
+            width: 32%;
+            display: inline-block;
+        }
+    }
+}
