@@ -13,6 +13,7 @@ $colors : (
     secondary: rgba(255,31,121,1),
     light: #FFFFFF,
     dark: #222,
+    dark-grey: lighten(#222, 10%),
     mid-grey: lighten(#222, 60%),
     light-grey: lighten(#222, 75%),
 );
@@ -22,6 +23,7 @@ $primary-dark-color: map-get($map: $colors, $key: primary-dark);
 $secondary-color: map-get($map: $colors, $key: secondary);
 $dark: map-get($map: $colors, $key: dark);
 $light: map-get($map: $colors, $key: light);
+$dark-grey: map-get($map: $colors, $key: dark-grey);
 $mid-grey: map-get($map: $colors, $key: mid-grey);
 $light-grey: map-get($map: $colors, $key: light-grey);
 

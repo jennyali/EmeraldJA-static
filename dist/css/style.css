@@ -5939,6 +5939,8 @@ h6 + p {
     padding: 0; }
   .navbar-custom-2 .nav li {
     padding: 15px 15px; }
+    .navbar-custom-2 .nav li:first-child {
+      padding-left: 0; }
   .navbar-custom-2 .nav a,
   .navbar-custom-2 .nav li,
   .navbar-custom-2 .nav > li > a {
@@ -5998,6 +6000,38 @@ h6 + p {
 
 .portfolio-item {
   margin-bottom: 45px; }
+
+.form-custom-1 {
+  background: #3c3c3c;
+  color: #FFFFFF; }
+  .form-custom-1 h2 {
+    color: #FFFFFF; }
+  .form-custom-1 .form-control {
+    background: #3c3c3c;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #06D6A0;
+    transition: border-bottom 0.2s;
+    -webkit-box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, 0.3); }
+    .form-custom-1 .form-control:focus {
+      border-bottom: 2px solid #ff1f79; }
+  .form-custom-1 input {
+    color: #FFFFFF;
+    font-weight: normal;
+    letter-spacing: 1px; }
+  .form-custom-1 label {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2; }
+  .form-custom-1 .contact-form__container__small-columns {
+    display: flex;
+    justify-content: space-between; }
+    .form-custom-1 .contact-form__container__small-columns .form-group {
+      width: 32%;
+      display: inline-block; }
 
 .headline__divider {
   position: relative;
