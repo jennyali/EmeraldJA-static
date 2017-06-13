@@ -5898,33 +5898,39 @@ h6 + p {
     width: 100%;
     max-width: 1410px; } }
 
-.navbar-custom-1 .navbar {
-  padding: 30px 0;
-  margin: 0; }
+body {
+  position: relative;
+  padding-top: 122px; }
 
-.navbar-custom-1 .navbar-brand {
-  font-size: 32px;
-  letter-spacing: 5px; }
-
-.navbar-custom-1 .navbar-brand--thick-text {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 45px;
-  color: #06D6A0; }
-
-.navbar-custom-1 .navbar-nav {
-  margin-top: 10px;
-  padding: 15px 0; }
+.navbar-custom-1 {
+  background-color: #FFFFFF; }
+  .navbar-custom-1 .navbar {
+    padding: 30px 0;
+    margin: 0;
+    border-radius: 0; }
+  .navbar-custom-1 .navbar-default {
+    background: none;
+    border: none; }
+  .navbar-custom-1 .navbar-brand {
+    font-size: 32px;
+    letter-spacing: 5px; }
+  .navbar-custom-1 .navbar-brand--thick-text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+    color: #06D6A0; }
+  .navbar-custom-1 .navbar-nav {
+    margin-top: 10px;
+    padding: 15px 0; }
+    .navbar-custom-1 .navbar-nav a {
+      padding: 0 15px;
+      letter-spacing: 2px;
+      font-size: 14px;
+      font-family: Poppins, sans-serif; }
+  .navbar-custom-1 .navbar-brand,
   .navbar-custom-1 .navbar-nav a {
-    padding: 0 15px;
-    letter-spacing: 2px;
-    font-size: 14px;
-    font-family: Poppins, sans-serif; }
-
-.navbar-custom-1 .navbar-brand,
-.navbar-custom-1 .navbar-nav a {
-  text-transform: uppercase;
-  text-decoration: none; }
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .navbar-custom-2 {
   margin-bottom: 0;
@@ -6054,6 +6060,24 @@ h6 + p {
 .masonry-layout__panel-content {
   padding: 10px;
   border-radius: 10px; }
+
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  transition: all 0.5s; }
+
+.site-header.affix {
+  background: rgba(255, 255, 255, 0.8); }
+  .site-header.affix .navbar {
+    padding: 10px 0; }
+  .site-header.affix .navbar-nav {
+    margin-top: 0; }
+  .site-header.affix .navbar-brand {
+    font-size: 24px; }
+  .site-header.affix .navbar-brand--thick-text {
+    font-size: 32px; }
 
 .features-section {
   padding: 100px 0 140px 0; }

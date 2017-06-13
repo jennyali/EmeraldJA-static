@@ -1,0 +1,33 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.site-header.affix {
+    background: rgba($light, 0.8);
+
+    
+
+    .navbar {
+        padding: $spacing-sm 0;
+    }
+
+    .navbar-nav {
+        margin-top: 0;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        //color: $light;
+    }
+
+    .navbar-brand {
+        font-size: $font-size-xlg;
+    }
+
+    .navbar-brand--thick-text {
+        font-size: $font-size-xxlg;
+    }
+}
