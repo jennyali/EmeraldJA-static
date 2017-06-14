@@ -36,12 +36,14 @@
     }
     
     .contact-form__container__small-columns {
-        display: flex;
-        justify-content: space-between;
-        
-        .form-group {
-            width: 32%;
-            display: inline-block;
+        @include mediaQ-min($bp-sm) {
+            display: flex;
+            justify-content: space-between;
+
+            .form-group {
+                width: 32%;
+                display: inline-block;
+            }
         }
     }
 }

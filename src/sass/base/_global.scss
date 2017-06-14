@@ -6,6 +6,13 @@ h1 {
     font-weight: bold;
     line-height: 1.5;
     font-family: $font-family-paragraph;
+    transition: all 0.5s;
+
+        @include mediaQ-max($bp-sm) {
+            font-size: $font-size-xxxlg;
+            margin-bottom: ($spacing-base * 4);
+            line-height: 1.2;
+        }
 }
 
 h2 {
@@ -14,6 +21,11 @@ h2 {
     margin: $spacing-base 0 ($spacing-base * 2) 0;
     font-size: $font-size-xxxlg;
     color: $primary-dark-color;
+
+        @include mediaQ-max($bp-sm) {
+            font-size: $font-size-xxlg;
+            line-height: 1.2;
+    }
 }
 
 h2 + p {
@@ -22,6 +34,11 @@ h2 + p {
     margin-bottom: ($spacing-lg * 3);
     color: $primary-dark-color;
     font-weight: 300;
+
+        @include mediaQ-max($bp-sm) {
+            font-size: $font-size-xlg;
+            line-height: 1.2;
+    }
 }
 
 h4 {
@@ -30,6 +47,10 @@ h4 {
     padding: $spacing-base $spacing-sm;
     margin: 0;
     color: $primary-dark-color;
+
+        @include mediaQ-max($bp-md) {
+            font-size: $font-size-xlg;
+    }
 }
 
 h4 + p {
@@ -38,6 +59,12 @@ h4 + p {
     line-height: 1.8;
     font-weight: 300;
     color: $primary-dark-color;
+
+        @include mediaQ-max($bp-md) {
+            font-size: $font-size-base;
+            line-height: 1.5;
+            padding-top: 0;
+    }
 }
 
 h5 {
@@ -46,6 +73,13 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 0;
+    transition: all 0.5s;
+
+        @include mediaQ-max($bp-sm) {
+            font-size: $font-size-base;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
 }
 
 h6 {
@@ -53,6 +87,11 @@ h6 {
     font-size: 18px;
     line-height: 1.5;
     color: $primary-dark-color;
+    
+        @include mediaQ-max($bp-md) {
+            font-size: $font-size-base;
+            line-height: 1.5;
+    }
 }
 
 h6 + p {
@@ -60,6 +99,11 @@ h6 + p {
     line-height: 1.8;
     font-weight: 300;
     color: $primary-dark-color;
+
+        @include mediaQ-max($bp-md) {
+            font-size: $font-size-base;
+            line-height: 1.5;
+    }
 }
 
 .container {

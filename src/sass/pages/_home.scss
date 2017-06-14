@@ -7,23 +7,49 @@
 .contact-form-section,
 .contact-form__container {
     padding: $section-row-padding;
+
 }
 
 .portfolio-section {
 
     .navbar-custom-1 {
         margin-bottom: ($spacing-base * 2);
+
+            @include mediaQ-max($bp-sm) {
+                margin-bottom: 0;
+
+                .navbar {
+                    padding: $spacing-lg $spacing-base;
+                }
+
+                .navbar-nav {
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                .nav > li {
+                    display: inline-block;
+                    margin-bottom: 15px;
+                }
+        }
     }
 }
 
 .bio-excerpt-section {
 
     .column {
-        padding: 0 ($spacing-base * 2);
+        @include mediaQ-min($bp-sm) {
+            padding: 0 ($spacing-base * 2);
+        }
     }
 
     img {
         padding: $spacing-base;
+
+        @include mediaQ-max($bp-sm) {
+            padding: 0;
+        }
     }
 
     .headline__divider {
@@ -36,5 +62,11 @@
 
     p {
         margin-bottom:  ($spacing-base * 2);
+    }
+
+    .bio-excerpt-section__text {
+        @include mediaQ-max($bp-sm) {
+            margin-bottom: $spacing-base * 4;
+        }
     }
 }
