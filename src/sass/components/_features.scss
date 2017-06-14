@@ -1,11 +1,10 @@
 .features-container {
-    margin-top: 60px;
+    margin-top: ($spacing-base * 4);
 }
 
 .feature {
     text-align: center;
-    padding: 40px 20px 20px 20px;
-    margin-bottom: 60px;
+    padding: ($spacing-lg * 2) $spacing-lg $spacing-lg $spacing-lg;
 
     img {
         max-width: 120px;

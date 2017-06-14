@@ -72,7 +72,28 @@
 
 __webpack_require__(1);
 
-$(document).ready(function () {});
+$(document).ready(function () {
+
+    // VIEW
+
+    var headerMenuBtn = $('#header-menu-btn');
+    var headerMenu = $('#header-menu');
+    var body = $('body');
+
+    headerMenuBtn.on({
+        'click': function click(e) {
+            headerMenuBtnHandler(e);
+        }
+    }
+
+    // Controller
+
+    );function headerMenuBtnHandler(e) {
+        e.preventDefault();
+        body.toggleClass('header-menu-open');
+        headerMenu.toggleClass('menu-open');
+    }
+});
 
 /***/ }),
 /* 1 */

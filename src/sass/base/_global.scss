@@ -72,4 +72,14 @@ h6 + p {
 body {
     position: relative;
     padding-top: 122px;
+    right: 0;
+    transition: right 0.5s;
+
+        @include mediaQ-max($bp-sm) {
+
+            &.header-menu-open {
+                right: $vertical-navbar-width;
+                transition: right 0.5s;
+        }
+    }
 }

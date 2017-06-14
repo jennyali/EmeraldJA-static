@@ -25,3 +25,19 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+
+//-----------------------------------------
+
+// Burger menu style
+
+//# curr.header-menu-btn
+
+.btn-custom-2 {
+    border-radius: 100%;
+    border: 2px solid $primary-color;
+    padding: 13px 10px;
+    
+    &.navbar-toggle {
+        border-color: $primary-color;
+    }
+}

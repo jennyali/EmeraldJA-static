@@ -98,3 +98,7 @@ $bp-lg: map-get($map: $breakpoints, $key: lg);
             ELEMENT VARIABLES
 
 ==============================================*/
+
+$section-row-padding: ( $spacing-base * 6 ) 0;
+
+$vertical-navbar-width: 240px;
