@@ -43,7 +43,17 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+
+    .navbar,
+    .navbar-nav,
+    .navbar-brand,
+    .navbar-brand--thick-text {
+        transition: all 0.5s;
+    }
 }
+
+
+//-----------------------------------------------------
 
 //#     SITE FOOTER NAVBAR
 .navbar-custom-2 {

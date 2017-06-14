@@ -3,13 +3,11 @@
     top: 0;
     z-index: 50;
     width: 100%;
-    transition: all 0.5s;
 }
 
-.site-header.affix {
+//# When header is out of view, affix a smaller version at the top of screen.
+.site-header.navbar-custom-1.affix {
     background: rgba($light, 0.8);
-
-    
 
     .navbar {
         padding: $spacing-sm 0;
@@ -19,15 +17,41 @@
         margin-top: 0;
     }
 
-    .navbar-default .navbar-nav > li > a {
-        //color: $light;
-    }
-
     .navbar-brand {
         font-size: $font-size-xlg;
     }
 
     .navbar-brand--thick-text {
         font-size: $font-size-xxlg;
+    }
+
+    .navbar,
+    .navbar-nav,
+    .navbar-brand,
+    .navbar-brand--thick-text {
+        transition: all 0.5s;
+    }
+}
+
+//# Small screen navbar change to off right side of screen.
+#header-menu {
+
+    @include mediaQ-max($bp-sm) {
+        position: fixed;
+        background: $primary-color;
+        top: 0;
+        bottom: 0;
+        right: -$vertical-navbar-width;
+        width: $vertical-navbar-width;
+        transition: right 0.5s;
+        margin: 0;
+
+        .navbar-nav > li > a {
+            color: $light;
+        }
+
+        &.menu-open {
+            right: 0;
+        }
     }
 }
