@@ -1,4 +1,9 @@
 
+.headline {
+    @include mediaQ-max($bp-sm) {
+        text-align: center;
+    }
+}
 
 .headline__divider {
     position: relative;

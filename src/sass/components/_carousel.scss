@@ -7,6 +7,15 @@
 
     img {
         width: 100%;
+
+            @include mediaQ-max($bp-sm) {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                max-width: none;
+                width: initial;
+                height: 82vh;
+        }
     }
 
     li {
@@ -25,5 +34,11 @@
         position: absolute;
         top: 50%;
         transform: translatey(-50%);
+
+            @include mediaQ-max($bp-sm) {
+                width: 100%;
+                text-align: center;
+                padding: $spacing-base 0;
+            }
     }
 }
