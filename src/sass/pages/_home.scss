@@ -7,7 +7,11 @@
 .contact-form-section,
 .contact-form__container {
     padding: $section-row-padding;
+}
 
+.features-section,
+.bio-excerpt-section, {
+    background-color: $light-grey;
 }
 
 .portfolio-section {

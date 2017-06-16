@@ -15,7 +15,7 @@
     }
 
     .navbar-brand {
-        font-size: $font-size-xxlg;
+        font-size: $font-size-xlg;
         letter-spacing: 5px;
     }
 
@@ -60,26 +60,32 @@
     margin-bottom: 0;
     border-radius: 0;
     border: none;
-    height: 100px;
+    text-align: center;
+
+        @include mediaQ-min($bp-sm) {
+            height: 100px;
+            text-align: left;
+        }
 
     .container {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);  
+        @include mediaQ-min($bp-sm) {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);  
+        }
     }
 
     .nav {
-
-        a {
-            padding: 0;
-        }
-
         li {
             padding: $spacing-base $spacing-base;
 
-            &:first-child {
-                padding-left: 0;
+            @include mediaQ-max($bp-sm) {
+                display: inline-block;
             }
+        }
+
+        a {
+            padding: 0;
         }
 
         a, 
@@ -88,6 +94,12 @@
             color: $light;
         }
     }
+
+    .navbar-nav {
+        padding: 0 $spacing-base;
+        margin: 0;
+    }
+
 }
 
 

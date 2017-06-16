@@ -12,11 +12,11 @@
 }
 .masonry-layout__panel {
   break-inside: avoid;
-  padding: 5px;
+  padding: $spacing-base;
 }
 .masonry-layout__panel-content {
-  padding: 10px;
-  border-radius: 10px;
+  //padding: 10px;
+  border-radius: 0;
 
       @include mediaQ-max($bp-xs) {
         padding: 0;

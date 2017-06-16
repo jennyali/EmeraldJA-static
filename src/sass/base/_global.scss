@@ -49,7 +49,7 @@ h4 {
     color: $primary-dark-color;
 
         @include mediaQ-max($bp-md) {
-            font-size: $font-size-xlg;
+            font-size: $font-size-lg;
     }
 }
 
@@ -61,7 +61,7 @@ h4 + p {
     color: $primary-dark-color;
 
         @include mediaQ-max($bp-md) {
-            font-size: $font-size-base;
+            font-size: $font-size-sm;
             line-height: 1.5;
             padding-top: 0;
     }
