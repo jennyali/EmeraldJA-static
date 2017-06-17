@@ -1,5 +1,9 @@
 .features-container {
     margin: ($spacing-base * 4) 0;
+
+        @include mediaQ-max($bp-sm) {
+            margin-bottom: 0;
+    }
 }
 
 .feature__content {

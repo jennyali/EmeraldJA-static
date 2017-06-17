@@ -7,6 +7,10 @@
 .contact-form-section,
 .contact-form__container {
     padding: $section-row-padding;
+
+        @include mediaQ-max($bp-sm) {
+            padding: ($spacing-base * 4) 0;
+        }
 }
 
 .features-section,
@@ -49,7 +53,6 @@
     }
 
     img {
-        padding: $spacing-base;
 
         @include mediaQ-max($bp-sm) {
             padding: 0;
@@ -68,9 +71,4 @@
         margin-bottom:  ($spacing-base * 2);
     }
 
-    .bio-excerpt-section__text {
-        @include mediaQ-max($bp-sm) {
-            margin-bottom: $spacing-base * 4;
-        }
-    }
 }
