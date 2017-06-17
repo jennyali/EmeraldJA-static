@@ -70,29 +70,18 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+//# Styles for Webpack Bundleling
 __webpack_require__(1);
 
 $(document).ready(function () {
 
-    // VIEW
+    //# Functionality
+    __webpack_require__(4);
 
-    var headerMenuBtn = $('#header-menu-btn');
-    var headerMenu = $('#header-menu');
-    var body = $('body');
-
-    headerMenuBtn.on({
-        'click': function click(e) {
-            headerMenuBtnHandler(e);
-        }
-    }
-
-    // Controller
-
-    );function headerMenuBtnHandler(e) {
-        e.preventDefault();
-        body.toggleClass('header-menu-open');
-        headerMenu.toggleClass('menu-open');
-    }
+    //# Element Event Handlers
+    __webpack_require__(3);
+    __webpack_require__(5);
 });
 
 /***/ }),
@@ -107,6 +96,112 @@ $(document).ready(function () {
 
 module.exports = __webpack_require__(0);
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+
+var headerMenuBtn = $('#header-menu-btn');
+var headerMenu = $('#header-menu');
+var body = $('body');
+
+//# Events
+
+headerMenuBtn.on({
+    'click': function click(e) {
+        headerMenuBtnHandler(e);
+    }
+}
+
+/*=========================================
+
+                Controller
+
+============================================*/
+
+);function headerMenuBtnHandler(e) {
+    e.preventDefault();
+    body.toggleClass('header-menu-open');
+    headerMenu.toggleClass('menu-open');
+}
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+
+/*=============================================
+
+                CODE SNIPPETS
+
+* code taken from previous projects.
+
+===============================================*/
+
+//----------    INTO VIEW SCROLL EFFECTS --------------------------//
+
+var $window = $(window);
+
+$window.on('scroll', check_if_in_view); //---- scroll event 
+
+function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = window_top_position + window_height;
+
+    $.each($('section[data-scroll="in-view-animation"]'), function () {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = element_top_position + element_height;
+
+        if (element_bottom_position >= window_top_position && element_top_position <= window_bottom_position) {
+            $element.addClass('in-view');
+        }
+        /*else {
+            $element.removeClass('in-view');
+        }*/
+    });
+}
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+
+
+//# Events
+
+
+/*========================================
+
+                CONTROLLER
+
+==========================================*/
+
+//# scroll effect - pass in a jquery selector for param.
+
+function clickScroll(selector) {
+    $('body').animate({
+        scrollTop: selector.offset().top - 145
+    }, 1000);
+}
 
 /***/ })
 /******/ ]);
