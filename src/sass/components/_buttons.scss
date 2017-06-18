@@ -49,6 +49,8 @@
 
 //---------------------------------------
 
+// Portfolio feature items, btn seen in overlay.
+
 .btn-custom-3 {
     border: 1px solid $light;
     border-radius: 100%;
@@ -62,4 +64,35 @@
             color: $dark;
             cursor: pointer;
         }
+}
+
+//-----------------------------------------
+
+// Primary colored button with white text.
+
+.btn-custom-4 {
+    padding: $spacing-base ($spacing-base * 2);
+    background: $primary-color;
+    border-color: $primary-color;
+    font-weight: bold;
+    color: $light;
+    letter-spacing: 1.5px;
+    font-size: $font-size-base;
+    border-radius: 0;
+    transition: all 0.5s;
+
+        @include mediaQ-max($bp-sm) {
+           padding: $spacing-sm $spacing-lg;
+           font-size: $font-size-sm;
+        }
+
+        &:hover {
+            background: $dark;
+            border-color: $dark;
+            color: $light;
+        }
+}
+
+.btn-custom-4--small {
+    padding: $spacing-sm $spacing-lg;
 }

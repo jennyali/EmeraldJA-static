@@ -15,7 +15,7 @@ $colors : (
     dark: #222,
     dark-grey: lighten(#222, 10%),
     mid-grey: lighten(#222, 60%),
-    light-grey: lighten(#222, 75%),
+    light-grey: lighten(#222, 83%),
 );
 
 $primary-color: map-get($map: $colors, $key: primary);
