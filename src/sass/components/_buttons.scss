@@ -71,7 +71,7 @@
 // Primary colored button with white text.
 
 .btn-custom-4 {
-    padding: $spacing-base ($spacing-base * 2);
+    padding: $spacing-sm $spacing-lg;
     background: $primary-color;
     border-color: $primary-color;
     font-weight: bold;
@@ -94,5 +94,6 @@
 }
 
 .btn-custom-4--small {
-    padding: $spacing-sm $spacing-lg;
+    font-size: $font-size-sm;
+    letter-spacing: 1px;
 }

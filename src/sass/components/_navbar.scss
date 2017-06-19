@@ -64,42 +64,33 @@
     text-align: center;
 
         @include mediaQ-min($bp-sm) {
-            height: 100px;
             text-align: left;
         }
 
-    .container {
-        @include mediaQ-min($bp-sm) {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);  
-        }
-    }
+        .nav {
+            li {
+                padding: $spacing-base $spacing-base;
 
-    .nav {
-        li {
-            padding: $spacing-base $spacing-base;
+                @include mediaQ-max($bp-sm) {
+                    display: inline-block;
+                }
+            }
 
-            @include mediaQ-max($bp-sm) {
-                display: inline-block;
+            a {
+                padding: 0;
+            }
+
+            a, 
+            li,
+            & > li > a {
+                color: $light;
             }
         }
 
-        a {
-            padding: 0;
+        .navbar-nav {
+            padding: 0 $spacing-base;
+            margin: 0;
         }
-
-        a, 
-        li,
-        & > li > a {
-            color: $light;
-        }
-    }
-
-    .navbar-nav {
-        padding: 0 $spacing-base;
-        margin: 0;
-    }
 
 }
 

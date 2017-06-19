@@ -1,4 +1,11 @@
 
+.item__text-container__inner-box { 
+    padding-top: 60px;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
 .carousel-textbox-move {
     padding-top: 0;
     opacity: 1; 
