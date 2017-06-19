@@ -3,26 +3,30 @@
     margin-bottom: $spacing-base * 2;
     border-bottom: 1px solid $light-grey;
 
-    @include mediaQ-min($bp-md) {
-        padding: $spacing-base 0;
-    }
+        @include mediaQ-min($bp-md) {
+            //padding: $spacing-base 0;
+            padding-bottom: 60px;
+            margin-bottom: 100px;
+        }
 
-    &:last-child {
-        margin-bottom: 0;
-        border-bottom: none;
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
     }
 }
 
 .blog-post__meta {
+    padding-bottom: $spacing-base;
     
-    @include mediaQ-min($bp-md) {
-        display: inline-block;
-    }
+        @include mediaQ-min($bp-md) {
+            display: inline-block;
+        }
+
         p, 
         span {
             display: inline-block;
             margin-right: $spacing-xs;
-        }
+    }
 }
 
 .blog-post__thumbnail {
@@ -34,35 +38,35 @@
 
             @include mediaQ-min($bp-md) {
                     float: left;
-                    margin-right: 30px;
+                    margin-right: $spacing-base;
             }
         }
     }
 }
 
 .blog-post__categories {
-    margin: 20px 0 30px;
+    margin: $spacing-lg 0 ($spacing-base * 2);
 
-    @include mediaQ-min($bp-md) {
-    position: relative;
-    display: block;
-    margin: 0 0 30px;
-    }
-
-            button {
-            margin-right: 10px;
+        @include mediaQ-min($bp-md) {
+            position: relative;
+            display: block;
+            margin: 0 0 $spacing-base;
         }
+
+        button {
+            margin-right: $spacing-sm;
+    }
 }
 
 .blog-post__header {
     h4 {
-        margin-bottom: 30px;
+        margin-bottom: $spacing-base;
     }
 }
 
 .blog-post__content {
     p {
-        margin-bottom: 60px;
+        margin-bottom: ($spacing-base * 4);
     }
 }
 

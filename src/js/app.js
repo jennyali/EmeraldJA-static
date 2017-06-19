@@ -12,5 +12,6 @@ $(document).ready(function() {
     //# Element Event Handlers
     require('./headerMenuHandler.js');
     require('./smootheScroll.js');
+    require('./heroHandler.js');
 
 });

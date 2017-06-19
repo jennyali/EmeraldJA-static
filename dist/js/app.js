@@ -82,6 +82,7 @@ $(document).ready(function () {
     //# Element Event Handlers
     __webpack_require__(3);
     __webpack_require__(5);
+    __webpack_require__(6);
 });
 
 /***/ }),
@@ -202,6 +203,37 @@ function clickScroll(selector) {
         scrollTop: selector.offset().top - 145
     }, 1000);
 }
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+var $homeHeroSection = $('#home_hero');
+var $heroInnerTextBox = $('.item__text-container__inner-box');
+
+//# Events
+
+
+//console.log($heroInnerTextBox);
+
+
+/*========================================
+
+                CONTROLLER
+
+==========================================*/
+function heroInnerTextBoxHandler(selector) {
+                setTimeout(selector.addClass('carousel-textbox-move'), 3000);
+}
+
+heroInnerTextBoxHandler($heroInnerTextBox);
 
 /***/ })
 /******/ ]);

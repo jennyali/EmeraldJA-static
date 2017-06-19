@@ -5839,6 +5839,11 @@ button.close {
             MIXINS
 
 =============================*/
+.item__text-container__inner-box {
+  padding-top: 60px;
+  opacity: 0;
+  transition: all 1s; }
+
 .carousel-textbox-move {
   padding-top: 0;
   opacity: 1; }
@@ -6009,13 +6014,7 @@ body {
   text-align: center; }
   @media (min-width: 767px) {
     .navbar-custom-2 {
-      height: 100px;
       text-align: left; } }
-  @media (min-width: 767px) {
-    .navbar-custom-2 .container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%); } }
   .navbar-custom-2 .nav li {
     padding: 15px 15px; }
     @media (max-width: 767px) {
@@ -6150,7 +6149,7 @@ body {
     cursor: pointer; }
 
 .btn-custom-4 {
-  padding: 15px 30px;
+  padding: 10px 20px;
   background: #06D6A0;
   border-color: #06D6A0;
   font-weight: bold;
@@ -6169,7 +6168,8 @@ body {
     color: #FFFFFF; }
 
 .btn-custom-4--small {
-  padding: 10px 20px; }
+  font-size: 14px;
+  letter-spacing: 1px; }
 
 .features-container {
   margin: 60px 0; }
@@ -6251,6 +6251,73 @@ body {
         width: 32%;
         display: inline-block; } }
 
+.breadcrumbs-section {
+  background: #f6f6f6; }
+
+.breadcrumb {
+  background: none;
+  margin-bottom: 0;
+  padding: 20px 15px; }
+  .breadcrumb a {
+    color: #222; }
+  .breadcrumb li {
+    font-weight: 700; }
+  .breadcrumb li.active {
+    color: #06D6A0; }
+
+.pagination > li > a,
+.pagination > li > span {
+  background: #06D6A0;
+  border-color: #06D6A0;
+  color: #FFFFFF;
+  margin: 0 10px 10px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: all 0.5s; }
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  background: #222;
+  border-color: #222;
+  color: #FFFFFF; }
+
+.widget {
+  padding: 60px 0;
+  border-bottom: 1px solid #f6f6f6; }
+  @media (max-width: 992px) {
+    .widget {
+      padding: 45px 0; } }
+  .widget h2 {
+    margin-top: 0;
+    font-weight: 500; }
+    @media (max-width: 992px) {
+      .widget h2 {
+        font-size: 32px; } }
+  .widget .form-control,
+  .widget .input-group-btn > button {
+    padding: 15px;
+    height: 50px;
+    color: #222;
+    background: #f6f6f6;
+    border-radius: 0;
+    border: 1px solid #bbbbbb;
+    box-shadow: none; }
+  .widget .form-control + .input-group-btn > button {
+    border-left: none; }
+  .widget .input-group .form-control:focus {
+    z-index: 2; }
+
+.widget:first-child {
+  padding-top: 0; }
+
 @media (max-width: 767px) {
   .headline {
     text-align: center; } }
@@ -6329,10 +6396,14 @@ body {
   display: block; }
 
 .page-content {
-  padding: 30px; }
+  padding: 30px;
+  padding-top: 60px; }
 
 .page-content__wrapper {
-  padding-right: 40px; }
+  margin-bottom: 30px; }
+  @media (min-width: 992px) {
+    .page-content__wrapper {
+      padding-right: 60px; } }
 
 .blog-post {
   padding: 15px 0 60px;
@@ -6340,19 +6411,21 @@ body {
   border-bottom: 1px solid #f6f6f6; }
   @media (min-width: 992px) {
     .blog-post {
-      padding: 15px 0; } }
+      padding-bottom: 60px;
+      margin-bottom: 100px; } }
   .blog-post:last-child {
     margin-bottom: 0;
     border-bottom: none; }
 
-@media (min-width: 992px) {
-  .blog-post__meta {
-    display: inline-block; } }
-
-.blog-post__meta p,
-.blog-post__meta span {
-  display: inline-block;
-  margin-right: 5px; }
+.blog-post__meta {
+  padding-bottom: 15px; }
+  @media (min-width: 992px) {
+    .blog-post__meta {
+      display: inline-block; } }
+  .blog-post__meta p,
+  .blog-post__meta span {
+    display: inline-block;
+    margin-right: 5px; }
 
 @media (min-width: 767px) {
   .blog-post__thumbnail img {
@@ -6360,7 +6433,7 @@ body {
   @media (min-width: 767px) and (min-width: 992px) {
     .blog-post__thumbnail img {
       float: left;
-      margin-right: 30px; } }
+      margin-right: 15px; } }
 
 .blog-post__categories {
   margin: 20px 0 30px; }
@@ -6368,12 +6441,12 @@ body {
     .blog-post__categories {
       position: relative;
       display: block;
-      margin: 0 0 30px; } }
+      margin: 0 0 15px; } }
   .blog-post__categories button {
     margin-right: 10px; }
 
 .blog-post__header h4 {
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .blog-post__content p {
   margin-bottom: 60px; }
@@ -6384,10 +6457,6 @@ body {
 @media (min-width: 992px) {
   .blog-post__btn-row button {
     float: right; } }
-
-.widget {
-  padding: 60px 0;
-  border-bottom: 1px solid #f6f6f6; }
 
 .features-section,
 .portfolio-section,
