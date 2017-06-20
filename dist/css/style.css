@@ -5859,6 +5859,65 @@ button.close {
   right: 0px;
   opacity: 1; }
 
+/*=================================================
+
+         Default Post Excurpts Styles
+
+* taking the blog-post as a base for other post types to add on and customize.
+
+==================================================*/
+.blog-post, .portfolio-post {
+  padding: 15px 0 60px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f6f6f6; }
+  @media (min-width: 992px) {
+    .blog-post, .portfolio-post {
+      padding-bottom: 60px;
+      margin-bottom: 100px; } }
+  .blog-post:last-child, .portfolio-post:last-child {
+    margin-bottom: 0;
+    border-bottom: none; }
+
+.blog-post__meta, .portfolio-post__meta {
+  padding-bottom: 15px; }
+  @media (min-width: 992px) {
+    .blog-post__meta, .portfolio-post__meta {
+      display: inline-block; } }
+  .blog-post__meta p, .portfolio-post__meta p, .blog-post__meta span, .portfolio-post__meta span {
+    display: inline-block;
+    margin-right: 5px; }
+
+@media (min-width: 767px) {
+  .blog-post__thumbnail img {
+    max-width: 350px; } }
+  @media (min-width: 767px) and (min-width: 992px) {
+    .blog-post__thumbnail img {
+      float: left;
+      margin-right: 15px; } }
+
+.blog-post__categories, .portfolio-post__categories {
+  margin: 20px 0 30px; }
+  @media (min-width: 992px) {
+    .blog-post__categories, .portfolio-post__categories {
+      position: relative;
+      display: block;
+      margin: 0 0 15px; } }
+  .blog-post__categories button, .portfolio-post__categories button {
+    margin-right: 10px; }
+
+.blog-post__header h4, .portfolio-post__header h4 {
+  margin-bottom: 15px; }
+
+.blog-post__content p, .portfolio-post__content p {
+  margin-bottom: 60px; }
+
+.blog-post__btn-row p, .portfolio-post__btn-row p {
+  font-size: 14px; }
+
+@media (min-width: 992px) {
+  .blog-post__btn-row button, .portfolio-post__btn-row button {
+    float: right; } }
+
 h1 {
   margin-top: 0;
   font-size: 72px;
@@ -6332,6 +6391,9 @@ body {
     position: absolute;
     top: -2px; }
 
+/*
+    # DEFAULT MASONRY LAYOUT
+*/
 .masonry-layout {
   column-count: 1;
   column-gap: 0; }
@@ -6351,6 +6413,19 @@ body {
   @media (max-width: 420px) {
     .masonry-layout__panel-content {
       padding: 0; } }
+
+/*
+    # MASONRY LAYOUT - CUSTOMIZED FOR PORTFOLIO PAGE
+*/
+@media (min-width: 420px) {
+  .masonry-layout--portfolio {
+    column-count: 1; } }
+  @media (min-width: 420px) and (min-width: 767px) {
+    .masonry-layout--portfolio {
+      column-count: 2; } }
+  @media (min-width: 420px) and (min-width: 767px) and (min-width: 992px) {
+    .masonry-layout--portfolio {
+      column-count: 3; } }
 
 .site-header {
   position: fixed;
@@ -6405,58 +6480,29 @@ body {
     .page-content__wrapper {
       padding-right: 60px; } }
 
-.blog-post {
-  padding: 15px 0 60px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #f6f6f6; }
-  @media (min-width: 992px) {
-    .blog-post {
-      padding-bottom: 60px;
-      margin-bottom: 100px; } }
-  .blog-post:last-child {
-    margin-bottom: 0;
-    border-bottom: none; }
+.portfolio-post__thumbnail {
+  position: relative; }
 
-.blog-post__meta {
-  padding-bottom: 15px; }
-  @media (min-width: 992px) {
-    .blog-post__meta {
-      display: inline-block; } }
-  .blog-post__meta p,
-  .blog-post__meta span {
-    display: inline-block;
+.portfolio-post__categories {
+  position: absolute;
+  top: 0;
+  margin: 5px; }
+  .portfolio-post__categories button {
     margin-right: 5px; }
 
-@media (min-width: 767px) {
-  .blog-post__thumbnail img {
-    max-width: 350px; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .blog-post__thumbnail img {
-      float: left;
-      margin-right: 15px; } }
+.portfolio-post__content {
+  display: none; }
+  @media (min-width: 420px) {
+    .portfolio-post__content {
+      display: block; } }
 
-.blog-post__categories {
-  margin: 20px 0 30px; }
-  @media (min-width: 992px) {
-    .blog-post__categories {
-      position: relative;
-      display: block;
-      margin: 0 0 15px; } }
-  .blog-post__categories button {
-    margin-right: 10px; }
+.portfolio-post__meta {
+  padding: 0; }
 
-.blog-post__header h4 {
-  margin-bottom: 15px; }
-
-.blog-post__content p {
-  margin-bottom: 60px; }
-
-.blog-post__btn-row p {
-  font-size: 14px; }
-
-@media (min-width: 992px) {
-  .blog-post__btn-row button {
-    float: right; } }
+.portfolio-post__header h4,
+.portfolio-post__content p,
+.portfolio-post__meta {
+  margin: 30px 0; }
 
 .features-section,
 .portfolio-section,

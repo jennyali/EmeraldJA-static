@@ -102,3 +102,6 @@ $bp-lg: map-get($map: $breakpoints, $key: lg);
 $section-row-padding: ( $spacing-base * 6 ) 0;
 
 $vertical-navbar-width: 240px;
+
+//# Portfolio Posts
+$portfolio-post-row-margin: ($spacing-base * 2) 0;
