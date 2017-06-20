@@ -6504,6 +6504,16 @@ body {
 .portfolio-post__meta {
   margin: 30px 0; }
 
+.port-gallery__item {
+  margin: 30px 0; }
+
+.port-gallery__item__text h4 {
+  margin: 30px 0; }
+
+.port-gallery__item__text p {
+  padding: 0;
+  margin: 30px 0; }
+
 .features-section,
 .portfolio-section,
 .bio-excerpt-section,
