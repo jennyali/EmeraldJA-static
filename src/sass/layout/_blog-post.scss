@@ -1,85 +1,28 @@
 .blog-post {
-    padding: $spacing-base 0 ($spacing-base * 4);
-    margin-bottom: $spacing-base * 2;
-    border-bottom: 1px solid $light-grey;
-
-        @include mediaQ-min($bp-md) {
-            //padding: $spacing-base 0;
-            padding-bottom: 60px;
-            margin-bottom: 100px;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-            border-bottom: none;
-    }
+    @extend %post;
 }
 
 .blog-post__meta {
-    padding-bottom: $spacing-base;
-    
-        @include mediaQ-min($bp-md) {
-            display: inline-block;
-        }
-
-        p, 
-        span {
-            display: inline-block;
-            margin-right: $spacing-xs;
-    }
+    @extend %post__meta;
 }
 
 .blog-post__thumbnail {
-    
-    img {
-        @include mediaQ-min($bp-sm) {
-            max-width: 350px;
-        
-
-            @include mediaQ-min($bp-md) {
-                    float: left;
-                    margin-right: $spacing-base;
-            }
-        }
-    }
+    @extend %post__thumbnail;
 }
 
 .blog-post__categories {
-    margin: $spacing-lg 0 ($spacing-base * 2);
-
-        @include mediaQ-min($bp-md) {
-            position: relative;
-            display: block;
-            margin: 0 0 $spacing-base;
-        }
-
-        button {
-            margin-right: $spacing-sm;
-    }
+    @extend %blog-post__categories;
 }
 
 .blog-post__header {
-    h4 {
-        margin-bottom: $spacing-base;
-    }
+    @extend %post__header;
 }
 
 .blog-post__content {
-    p {
-        margin-bottom: ($spacing-base * 4);
-    }
+    @extend %post__content;
 }
 
 .blog-post__btn-row {
-
-    p {
-        font-size: $font-size-sm;
-    }
-
-    button {
-        @include mediaQ-min($bp-md) {
-            float: right;
-        }
-    }
+    @extend %post__btn-row;
 }
 

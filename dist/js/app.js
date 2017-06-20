@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -72,71 +72,21 @@
 
 
 //# Styles for Webpack Bundleling
-__webpack_require__(1);
+__webpack_require__(5);
 
 $(document).ready(function () {
 
     //# Functionality
-    __webpack_require__(4);
+    __webpack_require__(1);
 
     //# Element Event Handlers
+    __webpack_require__(2);
+    __webpack_require__(4);
     __webpack_require__(3);
-    __webpack_require__(5);
-    __webpack_require__(6);
 });
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-
-/*========================================
-
-                VIEW
-
-==========================================*/
-
-//# Selectors
-
-var headerMenuBtn = $('#header-menu-btn');
-var headerMenu = $('#header-menu');
-var body = $('body');
-
-//# Events
-
-headerMenuBtn.on({
-    'click': function click(e) {
-        headerMenuBtnHandler(e);
-    }
-}
-
-/*=========================================
-
-                Controller
-
-============================================*/
-
-);function headerMenuBtnHandler(e) {
-    e.preventDefault();
-    body.toggleClass('header-menu-open');
-    headerMenu.toggleClass('menu-open');
-}
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports) {
 
 
@@ -175,7 +125,75 @@ function check_if_in_view() {
 }
 
 /***/ }),
-/* 5 */
+/* 2 */
+/***/ (function(module, exports) {
+
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+
+var headerMenuBtn = $('#header-menu-btn');
+var headerMenu = $('#header-menu');
+var body = $('body');
+
+//# Events
+
+headerMenuBtn.on({
+    'click': function click(e) {
+        headerMenuBtnHandler(e);
+    }
+}
+
+/*=========================================
+
+                Controller
+
+============================================*/
+
+);function headerMenuBtnHandler(e) {
+    e.preventDefault();
+    body.toggleClass('header-menu-open');
+    headerMenu.toggleClass('menu-open');
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+var $homeHeroSection = $('#home_hero');
+var $heroInnerTextBox = $('.item__text-container__inner-box');
+
+//# Events
+
+
+//console.log($heroInnerTextBox);
+
+
+/*========================================
+
+                CONTROLLER
+
+==========================================*/
+function heroInnerTextBoxHandler(selector) {
+                setTimeout(selector.addClass('carousel-textbox-move'), 3000);
+}
+
+heroInnerTextBoxHandler($heroInnerTextBox);
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 /*========================================
@@ -205,35 +223,17 @@ function clickScroll(selector) {
 }
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
-/*========================================
+// removed by extract-text-webpack-plugin
 
-                VIEW
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
 
-==========================================*/
+module.exports = __webpack_require__(0);
 
-//# Selectors
-var $homeHeroSection = $('#home_hero');
-var $heroInnerTextBox = $('.item__text-container__inner-box');
-
-//# Events
-
-
-//console.log($heroInnerTextBox);
-
-
-/*========================================
-
-                CONTROLLER
-
-==========================================*/
-function heroInnerTextBoxHandler(selector) {
-                setTimeout(selector.addClass('carousel-textbox-move'), 3000);
-}
-
-heroInnerTextBoxHandler($heroInnerTextBox);
 
 /***/ })
 /******/ ]);
