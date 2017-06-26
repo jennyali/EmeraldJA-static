@@ -18,21 +18,38 @@
             opacity: 0;
             transition: .5s ease;
             background-color: $primary-color;
+
+                h4 {
+                    color: $light;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+            }
+
+                &:hover {
+                    opacity: 1;
+            } 
         }
 
-        h4 {
-            color: $light;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        }
+        .portfolio-item__overlay--no-text {
+                span {
+                    color: $light;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%); 
+                    transition: top 0.5s 0.2s;              
+                }
 
-        &:hover {
-            .portfolio-item__overlay {
-                opacity: 1;
-            }  
-        }
-}
+                &:hover {
+                    span {
+                        top: 50%;
+                    }
+            }
+        } 
+    }
