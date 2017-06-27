@@ -16,6 +16,9 @@
     
     <!-- Google fonts -->
 
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+
     <!-- Main CSS Stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
@@ -72,106 +75,117 @@
 
   </section><!-- .container -->
 
-  <main class="page-content container">
+  <main class="">
 
 <!-- PAGE CONTENT
 =======================================================================-->
 
     <!-- TITLE
     ======================================================================-->
-    <div class="row single-portflio-post__title">
-        <div class="col-sm-12 headline category-caption">
+    
+    <div class="container">
+        <div class="row single-portflio-post__title">
+            <div class="col-sm-12 headline category-caption">
 
-            <h2>Portfolio Post Name</h2>
+                <h2>Portfolio Post Name</h2>
 
-        </div><!--.column .headline -->
-    </div><!-- .row -->
+            </div><!--.column .headline -->
+        </div><!-- .row -->
+    </div><!-- .container -->
 
     <!-- SLIDER
     ======================================================================-->
-    <div class="row single-portflio-post__slider">
+    <div class="slick-slider-wrapper">
+    <div class="container-fluid">
+        <div class="row single-portflio-post__slider">
+                        
+            <div class="single-portflio-post__slider-main center">
+    
+                    <img class="slick-slider__slide" src="assets/green-image-1.jpeg" alt="green object">
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <img class="slick-slider__slide" src="assets/green-image-2.jpeg" alt="green object">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                <img src="assets/green-image-1.jpeg" alt="Los Angeles">
-                </div>
+                    <img class="slick-slider__slide" src="assets/green-image-1.jpeg" alt="green object">
 
-                <div class="item">
-                <img src="assets/green-image-2.jpeg" alt="Chicago">
-                </div>
+                    <img class="slick-slider__slide"src="assets/green-image-3.jpeg" alt="green object">
 
-                <div class="item">
-                <img src="assets/green-image-3.jpeg" alt="New York">
-                </div>
-            </div>
+            </div><!-- .column -->
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-arrow-39"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-arrow-40"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
- 
-    </div><!-- .row -->
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
+
+    <div class="container single-portflio-post__slider-nav hidden-xs">
+        <div class="row single-portflio-post__slider">
+                        
+            <div class="single-portflio-post__slick-silder slider-nav">
+    
+                    <img class="slick-slider__slide" src="assets/green-image-1.jpeg" alt="green object">
+
+                    <img class="slick-slider__slide" src="assets/green-image-2.jpeg" alt="green object">
+
+                    <img class="slick-slider__slide" src="assets/green-image-1.jpeg" alt="green object">
+
+                    <img class="slick-slider__slide"src="assets/green-image-3.jpeg" alt="green object">
+
+            </div><!-- .column -->
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+    </div><!-- .slick-slider-wrapper -->
 
     <!-- POST CONTENT
     ======================================================================-->
-    <div class="row single-portflio-post__content">
+    <div class="container">
+        <div class="row single-portflio-post__content">
 
-        <div class="col-md-4">
+            <div class="col-md-4">
 
-            <figure class="portfolio-item single-portflio-post__content__figure">
-                <img src="assets/green-image-3.jpeg" class="img-responsive">
+                <figure class="portfolio-item single-portflio-post__content__figure">
+                    <img src="assets/green-image-3.jpeg" class="img-responsive">
 
-                <div class="portfolio-item__overlay portfolio-item__overlay--no-text">
-                    <a href="single-portfolio-post.html">
-                        <span class="icon-search btn-custom-3 btn-custom-3--alt"></span>
-                    </a>
-                </div><!-- .category-gallery__item__overlay -->
+                    <div class="portfolio-item__overlay portfolio-item__overlay--no-text">
+                        <a href="single-portfolio-post.html">
+                            <span class="icon-arrow-68 btn-custom-3 btn-custom-3--alt"></span>
+                        </a>
+                    </div><!-- .category-gallery__item__overlay -->
 
-            </figure>
+                </figure>
 
-            <figcaption class="single-portflio-post__content__figcaption">
-                <h4>Untitled</h4>
-                <ul class="list-unstyled">
-                    <li><span>Untitled</span>Untitled</li>
-                    <li><span>Untitled</span>Untitled</li>
-                    <li><span>Untitled</span>Untitled</li>
-                    <li><span>Untitled</span>Untitled</li>
-                </ul>
-            </figcaption>
+                <figcaption class="single-portflio-post__content__figcaption">
+                    <h4>Untitled</h4>
+                    <ul class="list-unstyled">
+                        <li><span>Untitled</span>Untitled</li>
+                        <li><span>Untitled</span>Untitled</li>
+                        <li><span>Untitled</span>Untitled</li>
+                        <li><span>Untitled</span>Untitled</li>
+                    </ul>
+                </figcaption>
 
-        </div>
+            </div>
 
-        <div class="col-md-8">
-            <p class="single-porfolio-post__content__text">
-                Praesent erat dolor, sagittis vitae placerat vestibulum, 
-                aliquet eu ante. Quisque sed enim tempus, finibus magna ut, 
-                pretium nibh. Etiam rhoncus tortor metus, sed lacinia nunc 
-                fermentum sed. Integer vel ultricies tellus. Etiam pharetra 
-                blandit purus eget viverra. Donec dignissim pellentesque 
-                lorem sit amet ornare. Donec nec metus eget ex maximus 
-                efficitur sed id urna. Nulla facilisi. Aliquam id tortor 
-                nec lorem efficitur sagittis. Nulla a dignissim enim, 
-                in vehicula velit. Morbi in sem est. Cras ut luctus orci, 
-                vel facilisis nunc. Praesent volutpat arcu vel egestas commodo. 
-                Cras sed nulla ac metus tempor molestie quis ac justo.
-            </p>
-        </div>
-        
-    </div><!-- .row -->
+            <div class="col-md-8">
+                <p class="single-porfolio-post__content__text">
+                    Praesent erat dolor, sagittis vitae placerat vestibulum, 
+                    aliquet eu ante. Quisque sed enim tempus, finibus magna ut, 
+                    pretium nibh. Etiam rhoncus tortor metus, sed lacinia nunc 
+                    fermentum sed. Integer vel ultricies tellus. Etiam pharetra 
+                    blandit purus eget viverra. Donec dignissim pellentesque 
+                    lorem sit amet ornare. Donec nec metus eget ex maximus 
+                    efficitur sed id urna. Nulla facilisi. Aliquam id tortor 
+                    nec lorem efficitur sagittis. Nulla a dignissim enim, 
+                    in vehicula velit. Morbi in sem est. Cras ut luctus orci, 
+                    vel facilisis nunc. Praesent volutpat arcu vel egestas commodo. 
+                    Cras sed nulla ac metus tempor molestie quis ac justo.
+                </p>
+            </div>
+            
+        </div><!-- .row -->
+    </div><!-- .container -->
 
 <!-- FOOTER
 =======================================================================-->
 
-  </main><!-- .container -->
+  </main><!-- -->
 
   <footer>
 
@@ -203,6 +217,7 @@
 
 
   <script src="../node_modules/jquery/dist/jquery.js" charset="UTF-8" type="text/javascript"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
   <script src="js/bootstrap.min.js" charset="UTF-8" type="text/javascript"></script>
   <script src="../node_modules/lodash/lodash.js" charset="UTF-8" type="text/javascript"></script>
   <script src="js/app.js" charset="utf-8" type="text/javascript"></script>

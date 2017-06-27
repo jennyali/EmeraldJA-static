@@ -102,3 +102,24 @@
     font-size: $font-size-sm;
     letter-spacing: 1px;
 }
+
+//----------------------------------------
+
+// Button style for Slick Slider Arrow icons
+
+.btn-custom-5 {
+    background: $dark;
+    color: $light;
+    border: none;
+    border-radius: 100%;
+    font-size: 16px;
+    width: 58px;
+    height: 58px;
+    padding-top: 6px;
+    transition: background 0.5s;
+    outline: transparent;
+
+        &:hover {
+            background: $primary-color;
+        }
+}

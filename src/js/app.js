@@ -14,4 +14,7 @@ $(document).ready(function() {
     require('./smootheScroll.js');
     require('./heroHandler.js');
 
+    //# Sick Slider
+    require('./slickSlider.js');
+
 });
