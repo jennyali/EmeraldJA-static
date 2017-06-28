@@ -6095,7 +6095,7 @@ body {
   .navbar-custom-2 .nav > li > a {
     color: #FFFFFF; }
   .navbar-custom-2 .navbar-nav {
-    padding: 0 15px;
+    padding: 0;
     margin: 0; }
 
 /*
@@ -6348,6 +6348,17 @@ body {
         width: 32%;
         display: inline-block; } }
 
+.form-custom-2 .form-control {
+  background: #f6f6f6;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 15px 30px;
+  font-weight: 300; }
+
+.form-custom-2 .btn {
+  margin: 30px 0; }
+
 .breadcrumbs-section {
   background: #f6f6f6; }
 
@@ -6405,7 +6416,7 @@ body {
     color: #222;
     background: #f6f6f6;
     border-radius: 0;
-    border: 1px solid #bbbbbb;
+    border: 1px solid #d5d5d5;
     box-shadow: none; }
   .widget .form-control + .input-group-btn > button {
     border-left: none; }
@@ -6519,10 +6530,13 @@ body {
   background-position: center; }
 
 .hero-img__caption {
-  padding: 120px 30px 120px 0; }
+  padding: 120px 30px 120px 15px; }
   .hero-img__caption p {
     color: #FFFFFF;
-    text-transform: uppercase; }
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 30px 0; }
 
 @media (max-width: 767px) {
   .headline {
@@ -6614,7 +6628,7 @@ body {
 .footer__copyright {
   color: #FFFFFF;
   margin: 0;
-  padding: 15px 30px;
+  padding: 15px;
   display: block; }
 
 .page-content {
@@ -6671,19 +6685,19 @@ body {
     margin-bottom: 15px; }
   .single-portflio-post__content__figcaption ul li {
     margin-bottom: 5px;
-    color: #bbbbbb; }
+    color: #d5d5d5; }
   .single-portflio-post__content__figcaption ul li span {
     color: #222;
     padding-right: 10px; }
 
 .widget-area .row {
-  border: 5px dashed #f6f6f6;
+  border: 4px dashed #d5d5d5;
   display: flex;
   justify-content: center; }
 
 .widget-area h1 {
   text-align: center;
-  color: #f6f6f6;
+  color: #d5d5d5;
   padding: 60px 0;
   margin: 0; }
 
@@ -6691,18 +6705,27 @@ body {
 .portfolio-section,
 .bio-excerpt-section,
 .contact-form-section,
-.contact-form__container {
-  padding: 90px 0; }
+.contact-form__container,
+.about-content-section,
+.about-widget-section,
+.blog-post__reviews-section,
+.blog-post__comments-section {
+  padding: 90px 15px; }
   @media (max-width: 767px) {
     .features-section,
     .portfolio-section,
     .bio-excerpt-section,
     .contact-form-section,
-    .contact-form__container {
-      padding: 60px 0; } }
+    .contact-form__container,
+    .about-content-section,
+    .about-widget-section,
+    .blog-post__reviews-section,
+    .blog-post__comments-section {
+      padding: 60px; } }
 
 .features-section,
-.bio-excerpt-section {
+.bio-excerpt-section,
+.about-widget-section {
   background-color: #f6f6f6; }
 
 .portfolio-section .navbar-custom-1 {
@@ -6754,6 +6777,9 @@ body {
   padding: 60px 15px 0; }
 
 .single-portflio-post__content {
+  margin: 30px 0; }
+
+.about-page__content__text {
   margin: 30px 0; }
 
 /*# sourceMappingURL=style.css.map*/

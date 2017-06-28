@@ -1,23 +1,6 @@
 
 //# Home page sections have a general row padding thats large.
 
-.features-section,
-.portfolio-section,
-.bio-excerpt-section,
-.contact-form-section,
-.contact-form__container {
-    padding: $section-row-padding;
-
-        @include mediaQ-max($bp-sm) {
-            padding: ($spacing-base * 4) 0;
-        }
-}
-
-.features-section,
-.bio-excerpt-section, {
-    background-color: $light-grey;
-}
-
 .portfolio-section {
 
     .navbar-custom-1 {
