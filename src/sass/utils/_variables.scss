@@ -14,7 +14,7 @@ $colors : (
     light: #FFFFFF,
     dark: #222,
     dark-grey: lighten(#222, 10%),
-    mid-grey: lighten(#222, 60%),
+    mid-grey: lighten(#222, 70%),
     light-grey: lighten(#222, 83%),
 );
 
@@ -99,7 +99,7 @@ $bp-lg: map-get($map: $breakpoints, $key: lg);
 
 ==============================================*/
 
-$section-row-padding: ( $spacing-base * 6 ) 0;
+$section-row-padding: ( $spacing-base * 6 ) 15px;
 
 $vertical-navbar-width: 240px;
 
