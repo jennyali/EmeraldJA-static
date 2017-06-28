@@ -1,0 +1,15 @@
+
+.hero-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-img__caption {
+    padding: 120px 30px 120px 0;
+
+    p {
+        color: $light;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,15 @@
+.widget-area {
+
+    .row {
+        border: 5px dashed $light-grey;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: $light-grey;
+        padding: $spacing-base * 4 0;
+        margin: 0;
+    }
+}

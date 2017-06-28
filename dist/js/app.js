@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -72,7 +72,7 @@
 
 
 //# Styles for Webpack Bundleling
-__webpack_require__(5);
+__webpack_require__(6);
 
 $(document).ready(function () {
 
@@ -81,11 +81,11 @@ $(document).ready(function () {
 
     //# Element Event Handlers
     __webpack_require__(2);
-    __webpack_require__(4);
+    __webpack_require__(5);
     __webpack_require__(3);
 
     //# Sick Slider
-    __webpack_require__(7);
+    __webpack_require__(4);
 });
 
 /***/ }),
@@ -199,49 +199,6 @@ heroInnerTextBoxHandler($heroInnerTextBox);
 /* 4 */
 /***/ (function(module, exports) {
 
-/*========================================
-
-                VIEW
-
-==========================================*/
-
-//# Selectors
-
-
-//# Events
-
-
-/*========================================
-
-                CONTROLLER
-
-==========================================*/
-
-//# scroll effect - pass in a jquery selector for param.
-
-function clickScroll(selector) {
-    $('body').animate({
-        scrollTop: selector.offset().top - 145
-    }, 1000);
-}
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
 
 /*========================================
 
@@ -304,6 +261,49 @@ function changeSlickArrow(selector, classname) {
 
 //changeSlickArrow('.slick-next', 'icon-arrow-40');
 //changeSlickArrow('.slick-prev', 'icon-arrow-39');
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+
+
+//# Events
+
+
+/*========================================
+
+                CONTROLLER
+
+==========================================*/
+
+//# scroll effect - pass in a jquery selector for param.
+
+function clickScroll(selector) {
+    $('body').animate({
+        scrollTop: selector.offset().top - 145
+    }, 1000);
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ })
 /******/ ]);
