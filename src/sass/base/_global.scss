@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.5;
     margin: $spacing-base 0 ($spacing-base * 2) 0;
     font-size: $font-size-xxxlg;
@@ -112,6 +112,18 @@ p {
     font-weight: 300;
 }
 
+.list-text-style--paragraph {
+    li {
+        line-height: 1.8;
+        font-size: $font-size-md;
+        font-weight: 300;
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
 .container {
     @include mediaQ-min($bp-lg) {
         width: 100%;
@@ -135,5 +147,9 @@ body {
 }
 
 .text--color {
+    color: $primary-color;
+}
+
+.color-primary {
     color: $primary-color;
 }
