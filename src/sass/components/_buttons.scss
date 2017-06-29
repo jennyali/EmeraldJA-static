@@ -81,10 +81,12 @@
     border-color: $primary-color;
     font-weight: bold;
     color: $light;
-    letter-spacing: 1.5px;
-    font-size: $font-size-base;
+    //letter-spacing: 1.5px;
+    //font-size: $font-size-base;
     border-radius: 0;
     transition: all 0.5s;
+    font-size: $font-size-sm;
+    letter-spacing: 1px;
 
         @include mediaQ-max($bp-sm) {
            padding: $spacing-sm $spacing-lg;
@@ -98,10 +100,6 @@
         }
 }
 
-.btn-custom-4--small {
-    font-size: $font-size-sm;
-    letter-spacing: 1px;
-}
 
 //----------------------------------------
 

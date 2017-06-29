@@ -5925,6 +5925,11 @@ button.close {
 * to show over an image when hovered
 
 ==================================================*/
+/*==============================
+
+    TYPOGRAPHY STYLES
+
+================================*/
 h1 {
   margin-top: 0;
   font-size: 72px;
@@ -5942,51 +5947,30 @@ h2 {
   font-weight: 500;
   line-height: 1.5;
   margin: 15px 0 30px 0;
-  font-size: 45px;
-  color: #2E3028; }
+  font-size: 45px; }
   @media (max-width: 767px) {
     h2 {
       font-size: 32px;
       line-height: 1.2; } }
 
-h2 + p {
-  font-size: 32px;
-  line-height: 1;
-  margin-bottom: 60px;
-  color: #2E3028;
-  font-weight: 300; }
-  @media (max-width: 767px) {
-    h2 + p {
-      font-size: 24px;
-      line-height: 1.2; } }
+h3 {
+  line-height: 1.5;
+  margin: 15px 0 20px 0; }
 
 h4 {
   font-weight: bold;
   font-size: 32px;
-  margin: 0;
-  color: #2E3028; }
+  margin: 15px 0; }
   @media (max-width: 992px) {
     h4 {
       font-size: 24px; } }
 
-h4 + p {
-  padding-top: 20px;
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 300;
-  color: #2E3028; }
-  @media (max-width: 992px) {
-    h4 + p {
-      font-size: 14px;
-      line-height: 1.5;
-      padding-top: 0; } }
-
 h5 {
-  margin: 0;
+  margin: 10px 0 15px;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  line-height: 0;
+  line-height: 1;
   transition: all 0.5s; }
   @media (max-width: 767px) {
     h5 {
@@ -5997,27 +5981,71 @@ h5 {
 h6 {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.5;
-  color: #2E3028; }
+  line-height: 1.5; }
   @media (max-width: 992px) {
     h6 {
-      font-size: 16px;
-      line-height: 1.5; } }
-
-h6 + p {
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 300;
-  color: #2E3028; }
-  @media (max-width: 992px) {
-    h6 + p {
       font-size: 16px;
       line-height: 1.5; } }
 
 p {
   line-height: 1.8;
   font-size: 18px;
-  font-weight: 300; }
+  font-weight: 200; }
+  @media (min-width: 767px) {
+    p {
+      font-weight: 300; } }
+
+li {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400; }
+
+a {
+  color: inherit; }
+
+/*
+    TEXT EXTRA STYLING
+*/
+.bold-text {
+  font-weight: 600; }
+
+.color-text {
+  color: #06D6A0; }
+
+.light-text {
+  color: #FFFFFF; }
+
+.grey-text {
+  color: #d5d5d5; }
+
+.dark-text {
+  color: #222; }
+
+/*==============================
+
+    GENERAL GLOBAL STYLES
+
+================================*/
+body {
+  position: relative;
+  padding-top: 130px;
+  right: 0;
+  transition: right 0.5s; }
+  @media (max-width: 767px) {
+    body.header-menu-open {
+      right: 240px;
+      transition: right 0.5s; } }
+
+.page__divider {
+  position: relative;
+  border-top: 1px solid #f6f6f6;
+  margin: 30px 0; }
+  .page__divider hr {
+    margin: 0;
+    border-top: 3px solid #222;
+    width: 70px;
+    position: absolute;
+    top: -2px; }
 
 .list-text-style--paragraph li {
   line-height: 1.8;
@@ -6031,16 +6059,6 @@ a:link {
   .container {
     width: 100%;
     max-width: 1410px; } }
-
-body {
-  position: relative;
-  padding-top: 130px;
-  right: 0;
-  transition: right 0.5s; }
-  @media (max-width: 767px) {
-    body.header-menu-open {
-      right: 240px;
-      transition: right 0.5s; } }
 
 .text--color {
   color: #06D6A0; }
@@ -6241,10 +6259,10 @@ body {
   border-color: #06D6A0;
   font-weight: bold;
   color: #FFFFFF;
-  letter-spacing: 1.5px;
-  font-size: 16px;
   border-radius: 0;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  font-size: 14px;
+  letter-spacing: 1px; }
   @media (max-width: 767px) {
     .btn-custom-4, .form-custom-3 .btn {
       padding: 10px 20px;
@@ -6253,10 +6271,6 @@ body {
     background: #222;
     border-color: #222;
     color: #FFFFFF; }
-
-.btn-custom-4--small {
-  font-size: 14px;
-  letter-spacing: 1px; }
 
 .btn-custom-5 {
   background: #222;
@@ -6592,6 +6606,45 @@ body {
   .search-result p {
     margin-bottom: 30px; }
 
+.icon-style-1 {
+  background: #222;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100%;
+  font-size: 16px;
+  width: 58px;
+  height: 58px;
+  padding-top: 6px;
+  transition: background 0.5s;
+  outline: transparent;
+  padding: 17px 15px; }
+  .icon-style-1:hover {
+    background: #06D6A0; }
+
+.icon-style-2 {
+  border-radius: 100%;
+  border: 2px solid #06D6A0;
+  padding: 17px 15px;
+  width: 58px;
+  height: 58px;
+  color: #3c3c3c; }
+  .icon-style-2.navbar-toggle {
+    border-color: #06D6A0; }
+
+.icon-style-3 {
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  margin-left: 15px;
+  font-size: 16px;
+  transition: all 0.25s;
+  padding: 17px 15px;
+  width: 58px;
+  height: 58px; }
+  .icon-style-3:hover {
+    border: 1px solid #222;
+    color: #222;
+    cursor: pointer; }
+
 @media (max-width: 767px) {
   .headline {
     text-align: center; } }
@@ -6877,5 +6930,12 @@ body {
   border-top: 1px solid #f6f6f6; }
   #error-page .page-caption form {
     margin: 30px 0; }
+
+.typography-section {
+  margin-bottom: 60px; }
+
+.elements-section__buttons button,
+.elements-section__buttons span {
+  margin: 10px; }
 
 /*# sourceMappingURL=style.css.map*/
