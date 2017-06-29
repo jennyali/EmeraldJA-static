@@ -64,3 +64,26 @@
         margin: $default-row-margin;
     }
 }
+
+//# Form style 3 - Curr. search box on 404 page
+
+.form-custom-3 {
+    @extend .form-custom-2;
+
+        input {
+            height: 44px;
+        }
+
+        .input-group {
+            max-width: 400px;
+        }
+
+        .btn {
+            @extend .btn-custom-4;
+            margin: 0px;
+
+                @include mediaQ-max($bp-sm) {
+                    font-size: $font-size-base;
+                }
+        }
+}
