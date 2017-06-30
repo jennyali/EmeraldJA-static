@@ -1,5 +1,6 @@
 .features-container {
     margin: ($spacing-base * 4) 0;
+    background: $light-grey;
 
         @include mediaQ-max($bp-sm) {
             margin-bottom: 0;

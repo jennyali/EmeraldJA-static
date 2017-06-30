@@ -1,5 +1,12 @@
+/*==================================
 
+        DROPDOWN MENUS
 
+====================================*/
+
+//      DROPDOWN FOR NAVBAR-CUSTOM-1 STYLE ONLY!       //
+
+//# Dropdown positioning when opened - inc animation
 .navbar-custom-1 li.open .dropdown-menu-custom--1 {
     opacity: 1;
         @include mediaQ-min($bp-sm) {
@@ -9,17 +16,18 @@
         }
 }
 
+//# Aids the dropdowns animation so it appears to fade upwards
 .navbar-custom-1  li > .dropdown-menu-custom--1 {
     top: 100px;
     display: block;
     opacity: 0;
 }
 
+//# Main styles for dropdown
 .dropdown-menu-custom--1 {
     border: none;
     background: $dark;
     box-shadow: none;
-    //width: 250px;
     border-radius: 0;
     padding: $spacing-base;
 
@@ -43,11 +51,13 @@
         }
 }
 
+//# change dropdown horizontal postion changes
 .navbar-right .dropdown-menu-custom--1 {
     left: 0;
     right: auto;
 }
 
+//# dropdown's text styling
 .navbar-links--underline .dropdown-menu-custom--1 li > a {
     white-space: normal; 
 
@@ -67,6 +77,38 @@
                 &:hover:before {
                     visibility: hidden;
                     background-color: none;
+                }
+        }
+}
+
+//       on display version on Elements page.       //
+.dropdown-menu-custom--1.display {
+    position: relative;
+    top: 0;
+    display: block;
+    float: none;
+    width: 200px;
+
+        & li > a {
+            white-space: normal; 
+
+                @include mediaQ-min($bp-sm) {
+                    white-space: nowrap;
+                    color: $light;
+                    letter-spacing: 0;
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 0;
+                    transition: color 0.5s;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                        &:hover:before {
+                            visibility: hidden;
+                            background-color: none;
+                        }
                 }
         }
 }

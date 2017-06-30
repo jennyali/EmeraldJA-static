@@ -17,4 +17,7 @@ $(document).ready(function() {
     //# Sick Slider
     require('./slickSlider.js');
 
+    //# Carousel 
+    require('./carouselHandler.js');
+
 });

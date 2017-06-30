@@ -16,6 +16,9 @@
     
     <!-- Google fonts -->
 
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+
     <!-- Main CSS Stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
@@ -72,16 +75,16 @@
 
   </section><!-- .container -->
 
-  <main id="elements-page" class="container page-content">
+  <main id="elements-page" class="container-fluid page-content">
     <div class="row">
 
 <!-- CONTENT
 =======================================================================-->
-        <div class="col-sm-8">
+        <div class="col-sm-12">
 
     <!-- COMPONENTS
     =======================================================================-->
-
+            <!-- Buttons and Icons -->
             <section class="elements-section">
 
                 <div class="elements-section__buttons">
@@ -114,59 +117,266 @@
                 <hr>
             </div><!-- .page__divider -->
 
+            <!-- Carousel / Slider -->
             <section class="elements-section">
 
                 <h4>Carousel / Slider</h4>
 
-                <div id="home_carousel" class="carousel">
+                <div class="carousel">
 
-                <div class="carousel-inner">
+                    <div class="carousel-inner">
 
-                    <div class="item active">
-                        <img src="assets/green-image-2.jpeg" alt="Frog">
+                        <div class="item active first-load">
+                            <img src="assets/green-image-2.jpeg" alt="Frog">
 
-                        <div class="container item__text-container">
-                            <div class="row item__text-container__inner-box">
+                            <div class="container item__caption">
 
-                                <div class="col-sm-12">
-                                    <h5>It's the emerald you've always dreamed of</h5>
-                                    <h1>The emerald guru</h1>
-                                    <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
-                                </div>
+                                <div class="row item__caption__inner">
 
-                            </div><!-- item__text-container__inner-box -->
-                        </div><!-- .item__text-container -->
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
 
-                    </div><!-- .item -->
+                                </div><!-- .item__caption__inner -->
 
-                    <div class="item">
-                        <img src="assets/green-image-1.jpeg" alt="Grass">
-                    </div><!-- .item -->
+                            </div><!-- item__caption -->
+                        </div><!-- .item .active -->
 
-                    <div class="item">
-                        <img src="assets/green-image-3.jpeg" alt="Grass">
-                    </div><!-- .item -->
+                        <div class="item">
+                            <img src="assets/green-image-1.jpeg" alt="Frog">
 
-                </div><!-- .carousel-inner -->
+                            <div class="container item__caption">
 
-                <ol class="carousel-indicators">
-                    <li data-target="#home_carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#home_carousel" data-slide-to="1"></li>
-                    <li data-target="#home_carousel" data-slide-to="2"></li>
-                </ol><!-- carousel-indicators -->
+                                <div class="row item__caption__inner">
 
-            </div><!-- #home_carousel -->
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
+
+                                </div><!-- .item__caption__inner -->
+
+                            </div><!-- item__caption -->
+                        </div><!-- .item -->
+
+                        <div class="item">
+                            <img src="assets/green-image-3.jpeg" alt="Frog">
+
+                            <div class="container item__caption">
+
+                                <div class="row item__caption__inner">
+
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
+
+                                </div><!-- .item__caption__inner -->
+
+                            </div><!-- item__caption -->
+                        </div><!-- .item .active -->
+
+                    </div><!-- .carousel-inner -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                        <li data-target=".carousel" data-slide-to="1"></li>
+                        <li data-target=".carousel" data-slide-to="2"></li>
+                    </ol><!-- carousel-indicators -->
+
+                </div><!-- .carousel -->
 
             </section><!-- .elements-section -->
+
+            <div class="page__divider">
+                <hr>
+            </div><!-- .page__divider -->
+
+            <!-- COMMENTS -->
+            <section class="elements-section">
+                <h4> Comments </h4>
+
+                <ol class="comments-list">
+
+                    <li class="comment-body">
+
+                        <article class="comment-body__holder">
+                            <div class="comment-meta">
+
+                                <img src="./assets/frog-1.png" class="img-responsive">
+
+                                <div class="blog-post__meta">
+                                    <p>by <span class="text--color">Admin</span> - Jun, 12, 06</p>
+                                    <span class="icon-baloon"></span>
+                                    <p>2</p>
+                                </div>
+                                
+                            </div>
+                            <div class="comment-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend velit cursus neque venenatis vehicula.
+                                </p>
+                            </div>
+                            <div class="comment-reply">
+                                <span class="icon-reply-mail-2"></span>
+                            </div>
+                        </article><!-- .comment-body__holder -->
+
+                        <ol class="comments-list comments-children">
+
+                            <li class="comment-body">
+                                <article class="comment-body__holder">
+                                    <div class="comment-meta">
+
+                                        <img src="./assets/frog-1.png" class="img-responsive">
+
+                                        <div class="blog-post__meta">
+                                            <p>by <span class="text--color">Admin</span> - Jun, 12, 06</p>
+                                            <span class="icon-baloon"></span>
+                                            <p>2</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend velit cursus neque venenatis vehicula.
+                                        </p>
+                                    </div>
+                                    <div class="comment-reply">
+                                        <span class="icon-reply-mail-2"></span>
+                                    </div>
+                                </article><!-- .comment-body__ holder -->
+                            </li><!-- .comment-children -->
+
+                        </ol><!-- .comments-children -->
+
+                    </li><!-- .comment-body -->
+
+                </ol><!-- .comments-list -->
+
+            </section><!-- .elements-section -->
+
+            <div class="page__divider">
+                <hr>
+            </div><!-- .page__divider -->
+
+            <!-- DROPDOWN MENU -->
+            <section class="elements-section">
+
+                <h4> Dropdown Menu </h4>
+
+                <h6>Note: this dropdown-menu is for navbar-custom-1</h6>
+
+                <div class="navbar-custom-1">
+                    <nav class="navbar navbar-default">
+                        <div class="container">
+
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Emerald<span class="navbar-brand--thick-text">JA</span></a>
+                                <button type="button" id="header-menu-btn" class="navbar-toggle btn-custom-2">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>                        
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse" id="header-menu">
+                                <ul class="nav navbar-nav navbar-right navbar-links--underline">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Home
+                                        <span class="caret"></span></a>
+                                        <ul class="dropdown-menu dropdown-menu-custom--1">
+                                            <li><a href="search-page.html">Search Results</a></li>
+                                            <li><a href="404-page.html">404</a></li>
+                                            <li><a href="typography.html">Typography</a></li>
+                                            <li><a href="elements.html">Elements</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                            </div>
+
+                        </div><!-- .container -->
+                    </nav><!-- .navbar -->
+                </div><!-- .navbar-custom-1 -->  
+
+                <h6>Dropdown Menu on Display</h6>
+
+                <ul class="dropdown-menu dropdown-menu-custom--1 display">
+                    <li><a href="search-page.html">Search Results</a></li>
+                    <li><a href="404-page.html">404</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                </ul>             
+
+            </section><!-- .elements-section -->   
+
+            <div class="page__divider">
+                <hr>
+            </div><!-- .page__divider -->
+
+            <!-- BLURB-->
+            <section class="elements-section">
+                <h4> Blurbs </h4>
+
+                <div class="row features-container">
+
+                    <div class="col-sm-4 feature">
+                        <div class="feature__content">
+
+                            <img src="assets/frog-1.png">
+                            <h4>The emerald maniacs</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula erat, 
+                                lobortis et risus in, suscipit sagittis metus.
+                            </p>
+
+                        </div><!-- .feature__content -->
+                    </div><!-- .col .feature -->
+
+                    <div class="col-sm-4 feature">
+                        <div class="feature__content">
+
+                            <img src="assets/frog-1.png">
+                            <h4>The emerald maniacs</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula erat, 
+                                lobortis et risus in, suscipit sagittis metus.
+                            </p>
+
+                        </div><!-- .feature__content -->
+                    </div><!-- .col .feature -->
+
+                    <div class="col-sm-4 feature">
+                        <div class="feature__content">
+
+                            <img src="assets/frog-1.png">
+                            <h4>The emerald maniacs</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula erat, 
+                                lobortis et risus in, suscipit sagittis metus.
+                            </p>
+
+                        </div><!-- .feature__content -->
+                    </div><!-- .col .feature -->
+
+                </div><!-- .row -->
+
+            </section><!-- .elements-section --> 
 
 
     <!-- LAYOUT
     =======================================================================-->
 
 
-        </div><!-- .column -->
 
-        <div class="col-sm-4">
 
     <!-- SIDEBAR WIDGETS
     =======================================================================-->
@@ -212,6 +422,7 @@
 
 
   <script src="../node_modules/jquery/dist/jquery.js" charset="UTF-8" type="text/javascript"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
   <script src="js/bootstrap.min.js" charset="UTF-8" type="text/javascript"></script>
   <script src="../node_modules/lodash/lodash.js" charset="UTF-8" type="text/javascript"></script>
   <script src="js/app.js" charset="utf-8" type="text/javascript"></script>
