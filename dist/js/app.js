@@ -86,6 +86,9 @@ $(document).ready(function () {
 
     //# Sick Slider
     __webpack_require__(4);
+
+    //# Carousel 
+    __webpack_require__(8);
 });
 
 /***/ }),
@@ -304,6 +307,37 @@ function clickScroll(selector) {
 
 module.exports = __webpack_require__(0);
 
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+/*========================================
+
+                VIEW
+
+==========================================*/
+
+//# Selectors
+var $carouselDots = $('.carousel-indicators li');
+var $carouselFirstItem = $('.item:first-child.active');
+
+//# Events
+
+$carouselDots.on({
+    'click': function click() {
+        carouselHandler();
+    }
+});
+
+/*=========================================
+
+                Controller
+
+============================================*/
+function carouselHandler() {
+    $carouselFirstItem.removeClass('first-load');
+}
 
 /***/ })
 /******/ ]);

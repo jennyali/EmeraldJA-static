@@ -16,6 +16,9 @@
     
     <!-- Google fonts -->
 
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+
     <!-- Main CSS Stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
@@ -73,44 +76,73 @@
 <!-- HERO
 =======================================================================-->
     <section id="home_hero" class="hero" data-scroll="in-view-animation" >
-        <div id="home_carousel" class="carousel">
+                <div id="home_carousel" class="carousel">
 
-            <div class="carousel-inner">
+                    <div class="carousel-inner">
 
-                <div class="item active">
-                    <img src="assets/green-image-2.jpeg" alt="Frog">
+                        <div class="item active first-load">
+                            <img src="assets/green-image-2.jpeg" alt="Frog">
 
-                    <div class="container item__text-container">
-                        <div class="row item__text-container__inner-box">
+                            <div class="container item__caption">
 
-                            <div class="col-sm-12">
-                                <h5>It's the emerald you've always dreamed of</h5>
-                                <h1>The emerald guru</h1>
-                                <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
-                            </div>
+                                <div class="row item__caption__inner">
 
-                        </div><!-- item__text-container__inner-box -->
-                    </div><!-- .item__text-container -->
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
 
-                </div><!-- .item -->
+                                </div><!-- .item__caption__inner -->
 
-                <div class="item">
-                    <img src="assets/green-image-1.jpeg" alt="Grass">
-                </div><!-- .item -->
+                            </div><!-- item__caption -->
+                        </div><!-- .item .active -->
 
-                <div class="item">
-                    <img src="assets/green-image-3.jpeg" alt="Grass">
-                </div><!-- .item -->
+                        <div class="item">
+                            <img src="assets/green-image-1.jpeg" alt="Frog">
 
-            </div><!-- .carousel-inner -->
+                            <div class="container item__caption">
 
-            <ol class="carousel-indicators">
-                <li data-target="#home_carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#home_carousel" data-slide-to="1"></li>
-                <li data-target="#home_carousel" data-slide-to="2"></li>
-            </ol><!-- carousel-indicators -->
+                                <div class="row item__caption__inner">
 
-        </div><!-- #home_carousel -->
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
+
+                                </div><!-- .item__caption__inner -->
+
+                            </div><!-- item__caption -->
+                        </div><!-- .item -->
+
+                        <div class="item">
+                            <img src="assets/green-image-3.jpeg" alt="Frog">
+
+                            <div class="container item__caption">
+
+                                <div class="row item__caption__inner">
+
+                                    <div class="col-sm-12 text-light">
+                                        <h5>It's the emerald you've always dreamed of</h5>
+                                        <h1>The emerald guru</h1>
+                                        <a href="index.html#home_contact-form"><button class="btn btn-default btn-lg btn-custom-1">Contact me</button></a>
+                                    </div>
+
+                                </div><!-- .item__caption__inner -->
+
+                            </div><!-- item__caption -->
+                        </div><!-- .item .active -->
+
+                    </div><!-- .carousel-inner -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                        <li data-target=".carousel" data-slide-to="1"></li>
+                        <li data-target=".carousel" data-slide-to="2"></li>
+                    </ol><!-- carousel-indicators -->
+
+                </div><!-- .carousel -->
     </section><!-- .hero -->
 
 <!-- FEATURES
@@ -424,10 +456,11 @@
 
 
   <script src="../node_modules/jquery/dist/jquery.js" charset="UTF-8" type="text/javascript"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
   <script src="js/bootstrap.min.js" charset="UTF-8" type="text/javascript"></script>
   <script src="../node_modules/lodash/lodash.js" charset="UTF-8" type="text/javascript"></script>
   <script src="js/app.js" charset="utf-8" type="text/javascript"></script>
-  
+ 
 
 </body>
 

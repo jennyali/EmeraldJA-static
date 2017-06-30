@@ -13,7 +13,7 @@ h1 {
     transition: all 0.5s;
 
         @include mediaQ-max($bp-sm) {
-            font-size: $font-size-xxxlg;
+            font-size: 42px;
             margin-bottom: ($spacing-base * 4);
             line-height: 1.2;
         }
@@ -99,27 +99,27 @@ a {
 */
 
 //# Thicken text
-.bold-text {
+.text-bold {
     font-weight: 600;
 }
 
 //# Primary color text
-.color-text {
+.text-color {
     color: $primary-color;
 }
 
 //# White / Light colored text
-.light-text {
+.text-light {
     color: $light;
 }
 
 //# Grey colored text
-.grey-text {
+.text-grey {
     color: $mid-grey;
 }
 
 //# Dark / Black colored text
-.dark-text {
+.text-dark {
     color: $dark
 }
 
